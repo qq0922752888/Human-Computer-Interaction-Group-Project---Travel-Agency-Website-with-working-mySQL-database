@@ -1,0 +1,44 @@
+.bus{
+    width:100vw;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.searchForm{
+    width: 65vw;
+    margin-left: auto;
+    margin-right:auto;  
+    position: absolute;
+    left: 250px;
+    top:450px;
+    /* background-color: rgb(203, 225, 135); */
+    padding: 20px 40px;
+    
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 20px;
+
+    margin-top: 10px;
+}
+
+.afterSearchButtons{
+    margin-top: 0px;
+    width: 60vw;
+    margin-left: auto;
+    margin-right:auto;
+}
+.text{
+    margin-top: 100px;
+    padding: 10px 300px;
+    margin-bottom: 100px;
+}
+.text h4{
+    text-align: center;
+}
+.navbar-collapse{
+    display: flex;
+    justify-content: center;
+}
+.table{
+    
+}

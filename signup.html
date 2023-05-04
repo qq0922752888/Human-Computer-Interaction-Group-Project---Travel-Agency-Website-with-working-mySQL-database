@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>sign up </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Aleo|Slabo+27px" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="logo text-center">
+ 
+</div>
+<div class="wrapper">
+  <div class="inner-warpper text-center">
+    <h2 class="title">Sign Up  </h2>
+    <form action="" id="formvalidate">
+      <div class="input-group">
+        <label class="palceholder" for="userName">User Name</label>
+        <input class="form-control" name="userName" id="userName" type="text" placeholder="" />
+        <i id="popup" class="far fa-user-circle">   
+        <span class="popuptext" id="popup">Enter name</span>
+        </i>
+        <span class="lighting"></span>     
+      </div>
+      <div class="input-group">
+        <label class="palceholder" for="userEmail">Email</label>
+        <input class="form-control" name="userEmail" id="userEmail" type="text" placeholder="" />
+        <i id="popup" onclick="showemailnotice()" class="far fa-envelope">
+        <span class="popuptext" id="popup">Format:123@email </span>
+        </i>
+        <span class="lighting"></span>
+     
+      </div>
+      <div class="input-group">      
+        <label class="palceholder" for="birthday">Birthday</label>
+        <input class="form-control" name="birthday" id="birthday" type="date"   />
+        <span class="lighting"></span>
+    
+      </div>
+      <div class="input-group">
+        <label class="palceholder" for="userPassword">Password</label>
+        <input class="form-control" name="userPassword" id="userPassword" type="password" placeholder="" onInput="check()"/>
+     <div class="set"> 
+        <i id="see" onclick="see()" class="far fa-eye"> <span class="popuptext" id="popup">show password</span> </i> 
+      </div>
+        <div class="check"> 
+       
+        <div id="check0">
+             <i class="far fa-check-circle"></i>  <span> Length more than 5.</span>
+        </div>
+        <div id="check1">
+             <i class="far fa-check-circle"></i>  <span> Length less than 10.</span>
+        </div>
+        <div id="check2">
+             <i class="far fa-check-circle"></i>  <span> Contains numerical character.</span>
+        </div>
+        <div id="check3">
+          <i class="far fa-check-circle"></i>   <span>Contains special character.</span>
+     </div>
+    
+        </div>
+      </div>
+      <div class="input-group">
+        <label class="palceholder" for="userPassword">Confirm Password</label>
+        <input class="form-control" name="userPassword" id="userPassword2" type="password" placeholder="" />
+        <span class="lighting"></span>
+        <i id="see2" onclick="see2()" class="far fa-eye">
+        <span class="popuptext" id="popup">Enter same password</span>
+        </i>
+ 
+      </div>
+
+      <button type="submit" id="login">Sign up</button>
+      <div class="createaccount">
+         Already have account? <a class="create account" href="index.html"> Sign in!</a>
+      </div>
+      
+    </form>
+  </div>
+ 
+</div>
+
+<!-- you don't need that :)  -->
+ 
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
